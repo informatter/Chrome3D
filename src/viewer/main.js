@@ -1,15 +1,32 @@
-import { Viewer } from "./Viewer";
+import { Viewer } from "./Viewer.js";
 
-main();
+const startButton = document.querySelector("#start-button");
+
+const introMessage = document.querySelector("#intro-message");
+
+startButton.addEventListener("click", startApp);
+
+//startApp();
 
 // Main entry point of viewer.
-function main(){
+function main() {
+  const container = document.querySelector("#scene-container");
 
-    const container = document.querySelector('#scene-container');
+  const viewer = new Viewer(container);
 
-    const viewer = new Viewer(container);
-  
-    viewer.render();
-
+  viewer.render();
 }
 
+function startApp() {
+  main();
+
+  if (introMessage.style.display === "none")
+    introMessage.style.display = "block";
+
+  else introMessage.style.display = "none";
+
+  if (startButton.style.display === "none") 
+    startButton.style.display = "block";
+
+  else startButton.style.display = "none";
+}

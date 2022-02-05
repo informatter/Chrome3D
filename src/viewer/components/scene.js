@@ -1,8 +1,10 @@
-import {Color,Scene}  from "https://cdn.skypack.dev@0.137.5";
+import {Color,Scene}  from "https://cdn.skypack.dev/three@0.137.5";
 
-export function createScene(){
+ function createScene(){
 
     const scene = new Scene();
 
     return scene;
 }
+
+export{createScene};

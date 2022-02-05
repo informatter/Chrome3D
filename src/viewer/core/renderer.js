@@ -1,4 +1,4 @@
-import WebGLRenderer  from "https://cdn.skypack.dev@0.137.5";
+import {WebGLRenderer}  from "https://cdn.skypack.dev/three@0.137.5";
 
 export function createRenderer(){
 
