@@ -1,12 +1,12 @@
-import {DirectionalLight,HemisphereLight} from "https://cdn.skypack.dev/three@0.137.5";
+import {DirectionalLight,HemisphereLight} from "https://cdn.skypack.dev/three@0.136.0";
 
 function createLights() {
     
 
     let lights = [];
 
-    const light = new DirectionalLight(0xffffff,3);
-    const hemiLight = new HemisphereLight( 0xffffff, 0x444444 );
+    const light = new DirectionalLight(0xffffff,2);
+    const hemiLight = new HemisphereLight( 0xffffff, 10);
     hemiLight.position.set( 0, 20, 0 );
     light.position.set(10, 10, 10);
 

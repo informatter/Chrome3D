@@ -1,8 +1,8 @@
-import {WebGLRenderer}  from "https://cdn.skypack.dev/three@0.137.5";
+import {WebGLRenderer}  from "https://cdn.skypack.dev/three@0.136.0";
 
 export function createRenderer(){
 
-    const renderer = new WebGLRenderer();
+    const renderer = new WebGLRenderer({ antialias: true });
 
     renderer.physicallyCorrectLights = true;
 

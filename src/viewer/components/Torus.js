@@ -1,20 +1,20 @@
-import * as THREE from "https://cdn.skypack.dev/three@0.137.5";
+import {TorusKnotGeometry,MeshLambertMaterial,Mesh} from "https://cdn.skypack.dev/three@0.136.0";
 
 let torus, torusKnotMaterial, torusKnot;
 
 class Torus {
   constructor(radius, tubeRadius, tubularSegments, radialSegments) {
 
-     torus = new THREE.TorusKnotGeometry(
+     torus = new TorusKnotGeometry(
       radius,
       tubeRadius,
       tubularSegments,
       radialSegments
     );
 
-    torusKnotMaterial = new THREE.MeshLambertMaterial( { color: 0xff00ff } );
+    torusKnotMaterial = new MeshLambertMaterial( { color: 0xff00ff } );
 
-    torusKnot = new THREE.Mesh(torus, torusKnotMaterial);
+    torusKnot = new Mesh(torus, torusKnotMaterial);
   }
 
   getThreeMesh(){

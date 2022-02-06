@@ -1,11 +1,17 @@
 import { Viewer } from "./Viewer.js";
 
+
+
+
 const startButton = document.querySelector("#start-button");
 
 const introMessage = document.querySelector("#intro-message");
 
+const fileInput = document.querySelector('#input-file');
+
 startButton.addEventListener("click", startApp);
 
+//const loader = new FBXLoader();
 
 // Main entry point of viewer.
 function main() {
@@ -15,6 +21,21 @@ function main() {
 
   viewer.run();
 }
+
+//fileInput.onchange = () => {
+ // const selectedFile = fileInput.files[0];
+ // console.log(selectedFile);
+
+  //let buffer = new TextEncoder().encode(selectedFile);
+
+//  var object = loader.parse(buffer.buffer, "");
+
+ // loader.load(selectedFile,function(object){
+
+ //   const a = 5;
+
+ // });
+//}
 
 function startApp() {
   main();
