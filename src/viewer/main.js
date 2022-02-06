@@ -6,7 +6,6 @@ const introMessage = document.querySelector("#intro-message");
 
 startButton.addEventListener("click", startApp);
 
-//startApp();
 
 // Main entry point of viewer.
 function main() {
@@ -14,7 +13,7 @@ function main() {
 
   const viewer = new Viewer(container);
 
-  viewer.render();
+  viewer.run();
 }
 
 function startApp() {

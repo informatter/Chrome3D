@@ -49,6 +49,17 @@ body {
     background-color: #42a6ff;
     color: white;
   }
+
+  /* makes button on top of scene */
+  /* .button-foo{
+
+    position: absolute;
+    display: block;
+    z-index: 2;
+    left: 70%;
+    top: 50%;
+
+  } */
   
   #scene-container {
     /* tell our scene container to take up the full page */
