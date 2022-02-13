@@ -10,16 +10,7 @@ import {
 
     const scene = new Scene();
 
-    scene.background  = new Color( "rgb(200, 200, 200)" ); //0xf0f0f0 
-
-    // const planeGeometry = new PlaneGeometry( 2000, 2000 );
-
-    // planeGeometry.rotateX( - Math.PI / 2 );
-    // const planeMaterial = new ShadowMaterial( { color: 0x000000, opacity: 0.2 } );
-
-    // const plane = new Mesh( planeGeometry, planeMaterial );
-    // plane.position.y = -200;
-    // plane.receiveShadow = true;
+    scene.background  = new Color( "rgb(200, 200, 200)" );
 
     const helper = new GridHelper( 2000, 50 );
     helper.position.y = - 200;
