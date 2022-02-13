@@ -15,19 +15,24 @@
 
 <body>
 
-  
-  
+
+
   <div id="scene-container">
 
-    
-    <!-- <button class = "button-foo">Test</button> -->
-    
-    
-      <div id="intro-message">
-        <h1>Welcome to the Chrome 3D Extension! </h1>
-      </div>
+    <div id="top-app-bar">
 
-      <!-- <div class ="fileButton">
+      <!-- <h3 style="align-self:center;" id="top-app-bar-title">Chrome 3D App</h3> -->
+      <!-- <button style="width: 50px; height: 40px; align-self: center;">
+
+        </button> -->
+
+      <h2 id="top-app-bar-title">Chrome 3D App</h2>
+    </div>
+
+    <!-- <button class = "button-foo">Test</button> -->
+
+
+    <!-- <div class ="fileButton">
         <input type="file" id="BtnBrowseHidden" name="files" style="display: none;" />
         <label for="BtnBrowseHidden" id="LblBrowse">
            Browse
@@ -35,19 +40,34 @@
       
       </div> -->
 
-      <!-- <input class="button" type="file"/> -->
+    <!-- <input class="button" type="file"/> -->
 
-      <!-- <div class="choose_file">
+    <!-- <div class="choose_file">
         <button type="button" class="buttonFile" >Upload File</button>
         <input type="file" id="input-file" />
     </div> -->
 
 
-      <div>
-        <button id="start-button"class="button" type="button" value="Check" >Start</button>
-      </div>
+    <div id="sliderContainer" class="slider-container">
 
-      
+      <input type="range" min="1" max="500" value="200" class="slider" id="torus-radius">
+
+      <input type="range" min="1" max="100" value="50" class="slider" id="torus-tube-radius">
+
+      <input type="range" min="10" max="300" value="100" class="slider" id="torus-tubular-segments">
+
+      <input type="range" min="10" max="50" value="16" class="slider" id="torus-radial-segments">
+
+    </div>
+
+    <div>
+
+      <button id="start-button" class="button" type="button" value="Check">Start</button>
+    </div>
+    
+
+
+
 
   </div>
 </body>
